@@ -70,6 +70,8 @@ p.font-content-serv-title {
 	width: 100%;
 	height: 207px;
 	background-color: #e1e2e3;
+	background-image: url("img/logo.png");
+
 }
 
 .header-title {
@@ -121,6 +123,13 @@ background: linear-gradient(to top, #2885d7, #4b60d8);
 	height: 48px;
 	background-color: #2172c3;
 	padding-left: 44px;
+}
+
+.menu-share {
+	float: right;
+	padding: 5px;
+	padding-right: 32px;
+
 }
 
 a.menu-but {
@@ -256,7 +265,7 @@ a.menu-but:active {
 	line-height: 32px;
 	padding-right: 32px;
 	overflow: auto;
-	height: 732px;
+	height: 650px;
 }
 
 .content-rule-data-list {
@@ -286,7 +295,7 @@ a.svblock-but {
 	text-align: center;
 	display: block;
 	padding: 12px 0px;
-	font-size: 22px;
+	font-size: 20px;
 	outline: none;
 	color: #333333;
 	border-top: 1px solid #ebeced;
