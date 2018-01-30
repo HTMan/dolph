@@ -70,16 +70,22 @@ p.font-content-serv-title {
 	width: 100%;
 	height: 207px;
 	background-color: #e1e2e3;
-	background-image: url("img/logo.png");
-
+	background-image: url("img/water_texture.png");
 }
 
 .header-title {
 	position: relative;
-	width: 335px;
-	padding: 48px;
-	padding-left: 96px;
+	width: 400px;
+	height: 100%;
+	margin-left: 78px;
 	float: left;
+	background-color: #e1e2e3;
+	opacity: 0.7;
+}
+
+.header-title-text {
+	margin-top: 54px;
+	margin-left: 42px;
 	font-size: 38px;
 	color: #2172c3;
 }
@@ -264,8 +270,6 @@ a.menu-but:active {
 	padding-left: 32px;
 	line-height: 32px;
 	padding-right: 32px;
-	overflow: auto;
-	height: 650px;
 }
 
 .content-rule-data-list {
@@ -275,7 +279,7 @@ a.menu-but:active {
 
 .content-svblock {
 	width: 25%;
-	min-height: 100%;
+	height: 100%;
 	float: left;
 	background-color: #b8c1df;
 	background: linear-gradient(to bottom, #b8c1df, #b1cadb);
@@ -284,7 +288,7 @@ a.menu-but:active {
 
 .content-data_svblock {
 	width: 75%;
-	min-height: 100%;
+	height: 100%;
 	float: right;
 	background-color: #e1e2e3;
 	box-shadow: inset -4px 11px 8px -8px #505050;
@@ -328,6 +332,8 @@ box-shadow: 0px 0px 4px 2px #333333;
 
 .center_border {
 	margin: 2vh;
+	max-height: 96vh;
+	overflow: auto;
 }
 
 .center {
