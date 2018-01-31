@@ -129,6 +129,7 @@ background: linear-gradient(to top, #2885d7, #4b60d8);
 	height: 48px;
 	background-color: #2172c3;
 	padding-left: 44px;
+	border-bottom: 18px solid #2885d7;
 }
 
 .menu-share {
@@ -166,11 +167,6 @@ a.menu-but:active {
 	-webkit-box-shadow: inset 0px 7px 7px -4px rgba(50, 50, 50, 0.8);
 	-moz-box-shadow:    inset 0px 7px 7px -4px rgba(50, 50, 50, 0.8);
 	box-shadow:         inset 0px 7px 7px -4px rgba(50, 50, 50, 0.8);
-}
-
-.dec-border {
-	height: 18px;
-	background-color: #2885d7;
 }
 
 .up_line {
