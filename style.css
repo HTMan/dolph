@@ -105,7 +105,7 @@ p.font-content-serv-title {
 }
 
 .header-contacts-block {
-	float: right;
+	float: left;
 	height: 175px;
 	width: 348px;
 	padding: 16px;
@@ -119,7 +119,6 @@ p.font-content-serv-title {
 
 .header-contacts-map {
 float: right; 
-height: 191px;
 padding: 8px; 
 background-color: #2885d7;
 background: linear-gradient(to top, #2885d7, #4b60d8);
