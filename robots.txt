@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 User-Agent: *
 Disallow: /schedule.html
 Disallow: /gallery.html
@@ -5,3 +6,12 @@ Disallow: /info_int.html
 Disallow: /info_rules.html
 Disallow: /pricelist.html
 http://dolph55.ru/sitemap.xml
+=======
+User-Agent: *
+Disallow: /schedule.html
+Disallow: /gallery.html
+Disallow: /info_int.html
+Disallow: /info_rules.html
+Disallow: /pricelist.html
+http://dolph55.ru/sitemap.xml
+>>>>>>> ad412d94115b31290d67ecc2bbe3d8cfd5342ce9
