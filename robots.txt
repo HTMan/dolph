@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: /schedule.html
+Disallow: /gallery.html
+Disallow: /info_int.html
+Disallow: /info_rules.html
+Disallow: /pricelist.html
+http://dolph55.ru/sitemap.xml
