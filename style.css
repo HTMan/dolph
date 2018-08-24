@@ -189,11 +189,11 @@ a.menu-but:active {
 
 .content-info_block {
 	position: relative;
-	left: 350px;
+	left: 320px;
 	margin: 32px;
 	margin-top: 0px;
-	height: 230px;
-	width: 700px;
+	height: 270px;
+	width: 750px;
 	padding-left: 40px;
 	padding-right: 40px;
 }
