@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto, sans-serif;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
+	background: linear-gradient(to top, #2885d7, #4b60d8);
+}
+
+.logo {
+	background-color: #e1e2e3;
+	text-align: center;
+	background-image: url(../img/water_texture.png);
+	flex-grow: 1;
+	font-size: 24px;
+	color: #2172c3;
+}
+
+.logo h1 {
+	margin: 5% 0;
+	background-color: #e1e2e3;
+	opacity: 0.7;
+}
+
+.contacts {
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	flex-basis: 25%;
+	color: white;
+	font-size: 22px;
+}
+
+.contacts :first-child {
+	align-self: center
+}
+
+.contacts a {
+	color: #dadaff;
+}
+
+.map {
+	text-align: center;
+	flex-basis: 15%;
+}
+
+.map iframe {
+	border: 0;
+	width: 100%;
+	height: 100%;
+}
+
+nav {
+	width: 100%;
+	display: inline-flex;
+	justify-content: center-left;
+	background-color: #2172c3;
+	border-bottom: 18px solid #2885d7;
+}
+
+nav a {
+	padding: 1em;
+	font-size: 20px;
+	outline: none;
+	color: #ebeced;
+	transition-duration: 0.1s;
+}
+nav a:hover {
+	background-color: #4f98e1;
+	box-shadow: inset 0 -4px #1a5997;
+}
+nav a:active {
+	background-color: #e1e2e3;
+	color: #333333;
+	box-shadow: inset 0 -4px #e1e2e3;
+}
