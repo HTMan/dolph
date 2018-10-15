@@ -75,7 +75,7 @@ nav {
 	flex-wrap: wrap;
 	justify-content: center-left;
 	background-color: #2172c3;
-	border-bottom: 18px solid #2885d7;
+	border-bottom: 0.9em solid #2885d7;
 }
 
 /*header nav buttons*/
@@ -104,9 +104,10 @@ nav a:active {
 
 /*paper-blocks*/
 .paper-field {
+	display: flex;
+	flex-direction: column;
 	background-color: #ebf2f9;
 	box-shadow: inset 0px 7px 7px -4px rgba(50, 50, 50, 0.8);
-	padding-top: 24px;
 }
 
 .paper-field h2 {
@@ -148,9 +149,7 @@ nav a:active {
 
 /*ads*/
 .ads {
-	margin: 0 auto;
 	width: 60%;
-	padding: 0 2em;
 }
 
 /*main_info*/
@@ -158,7 +157,6 @@ nav a:active {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 24px;
 	padding-left: 2em;
 }
 
@@ -177,5 +175,10 @@ nav a:active {
 	nav a {
 		text-align: center;
 		box-shadow: inset 0 2px #185591;
+	}
+	
+	/*papers*/
+	article img {
+		display: none;
 	}
 }
