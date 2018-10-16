@@ -147,7 +147,7 @@ nav a:active {
 }
 
 /*ads*/
-.ads { max-width: 800px;}
+.ads { flex-basis: 800px;}
 
 /*main_info*/
 .main_info {
