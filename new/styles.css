@@ -167,7 +167,7 @@ h3 {
 	background-color: #ebf2f9;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	padding: 2em;
 }
