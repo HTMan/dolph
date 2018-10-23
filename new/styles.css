@@ -276,7 +276,7 @@ footer {
 	.main_info img {display: none;}
 	
 	/*services*/
-	.services article {padding:0.7em;}
+	.services article {padding: 0.7em 0;}
 	
 	/*additional*/
 	.additional img:last-child {display: none;}
