@@ -116,7 +116,7 @@ h2.info-title {
 .paper-field p {
 	padding: 0.7em 2em;
 	text-align: justify;
-	text-indent: 1.5em;
+	/*text-indent: 1em;*/
 	color: #333333;
 }
 
