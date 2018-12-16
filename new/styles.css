@@ -56,10 +56,19 @@ header {
 	flex: 1 22%;
 }
 
-.map * {
-	border: 4px solid rgba(0,0,0,0.0);
+.map div {
+	border: 8px solid rgba(0,0,0,0.05);
 	width: 100%;
 	height: 100%;
+	min-height: 130px;
+	background-image: url(view_map.png);
+	background-position: center;
+	background-size: 480px;
+	transition: background-size 0.5s;
+}
+
+.map div:hover {
+		background-size: 550px;
 }
 
 nav.header-nav {
@@ -148,7 +157,7 @@ nav.paper-nav {
 	flex-direction: column;
 }
 
-nav.paper-nav a {
+nav.paper-nav * {
 	text-align: center;
 	padding: 1em;
 	outline: none;
@@ -156,10 +165,10 @@ nav.paper-nav a {
 	border-bottom: 1px solid #ebeced;
 	transition-duration: 0.1s;
 }
-nav.paper-nav a:hover {
+nav.paper-nav *:hover {
 	background-color: #e1e2e3;
 }
-nav.paper-nav a:active {
+nav.paper-nav *:active {
 	background-color: #ebeced;
 	color: #4f98e1;
 }
@@ -198,7 +207,6 @@ h3 {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	padding: 2em;
 }
 
 .services article:nth-child(2n+1) {
@@ -208,8 +216,8 @@ h3 {
 }
 
 .services img {
-	margin-right: 0.5em;
-	border:8px solid white;
+	margin: 1em;
+	border: 8px solid white;
 	border-radius: 50%;
 	box-shadow: 0px 0px 0px 4px #5d9ddd;
 	width: 250px;
@@ -218,8 +226,7 @@ h3 {
 
 .services p {
 	flex: 1 70%;
-	margin: 1em;
-	padding-left:0.5em;
+	padding: 1em;
 	border-left: 2px solid #e1e2e3;
 	text-align: justify;
 	color: black;
