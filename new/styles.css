@@ -63,12 +63,12 @@ header {
 	min-height: 130px;
 	background-image: url(view_map.png);
 	background-position: center;
-	background-size: 480px;
+	background-size: 800px;
 	transition: background-size 0.5s;
 }
 
 .map div:hover {
-		background-size: 550px;
+		background-size: 950px;
 }
 
 nav.header-nav {
