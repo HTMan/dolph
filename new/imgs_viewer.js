@@ -14,7 +14,7 @@
 }
 
 function getList() {
-	const num_files = 15;
+	const num_files = 17;
 	var container = document.getElementById("imgs_viewer"), item;
 	for (let i=0; i<=num_files; i++) {
 		item = document.createElement("img");
