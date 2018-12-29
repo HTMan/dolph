@@ -180,6 +180,7 @@ a.menu-but:active {
 
 .content {	
 	background-color: #ebf2f9;
+	background-image: url(new/site/snowflakes_background.png);
 }
 
 .paper-shadow {	
@@ -196,6 +197,10 @@ a.menu-but:active {
 	width: 750px;
 	padding-left: 40px;
 	padding-right: 40px;
+	background-image: url(new/site/fir_tree.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 200px;
 }
 
 .content-about {
@@ -236,6 +241,7 @@ a.menu-but:active {
 	padding-top: 52px;
 	padding-bottom: 52px;
 	padding-left: 88px;
+	background-color: #ebf2f9;
 	height: 255px;
 }
 
