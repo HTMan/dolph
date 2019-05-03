@@ -19,3 +19,9 @@ var table = {
 		parentElem.appendChild(button);
 	}
 };
+
+var tableWorker = function () {
+
+	/* private */
+	var list 
+}
