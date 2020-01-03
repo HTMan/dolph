@@ -10,6 +10,7 @@ body {
 	margin: 0 auto auto;
 	width: 1522px;
 	background-color: #2172c3;
+	-webkit-font-smoothing: antialiased;
 }
 
 p.text {
@@ -193,11 +194,11 @@ a.menu-but:active {
 	left: 320px;
 	margin: 32px;
 	margin-top: 0px;
-	height: 640px;
-	width: 750px;
+	height: 500px;
+	width: 600px;
 	padding-left: 40px;
 	padding-right: 40px;
-	/*background-image: url(new/site/fir_tree.png);*/
+	background-image: url(new/site/fir_tree.png);
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	background-size: 200px;
