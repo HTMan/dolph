@@ -1,558 +1,62 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114077693-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-114077693-1');
-</script>
-<meta charset="UTF-8">
-<title>Расписание</title>
-<style>
-   TD, TH { 
-    text-align: center; 
-    padding: 3px; 
-    border: 1px solid gray;
-   }
-  </style>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<div class="header">
-		<div class="header-title">
-			<p class="header-title-text">Плавательный бассейн Дельфин</p>
-		</div>
-		<div class="header-contacts">
-				<div class="header-contacts-block">
-					<p class="font-header-title" style="padding-left: 20px">Наши контакты</p>
-					<p class="text" style="padding-top: 20px; padding-left: 20px">
-						Адрес: г. Омск, Кировский округ,<br>
-						ул. Мельничная, 4.<br>
-					</p>
-					<p class="text header-contacts-block-text" style="padding-top: 20px;  padding-left: 20px">
-						Телефон: <a href="tel:55-06-70" style="text-decoration: none; color: #dadaff">+7 (3812) 55-06-70</a>
-						<br>
-						Почта: <a href="mailto:aquafitness@bk.ru" style="text-decoration: none; color: #dadaff">aquafitness@bk.ru</a>
-					</p>
-				</div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2292.252985155408!2d73.32307758051876!3d54.93357968623823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43ab03b2cb37d0cb%3A0x899bb25319c3b143!2z0YPQuy4g0JzQtdC70YzQvdC40YfQvdCw0Y8sIDQsINCe0LzRgdC6LCDQntC80YHQutCw0Y8g0L7QsdC7LiwgNjQ0MDgy!5e0!3m2!1sru!2sru!4v1517129719564" 
-				width="210" height="191" allowfullscreen style="border: 0" class="header-contacts-map"></iframe>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="table.css">
+		<script type="module" src="base.js"></script>
+		<script type="module" src="schedule.js"></script>
+		<title>Бассейн "Дельфин"</title>
+	</head>
+	<body>
+		<header>
+			<!--flexbox!-->
+			<div class="logo">
+				<h1>Плавательный<br>бассейн Дельфин</h1>
 			</div>
-		</div>
-	<div class="menu">
-		<a href="index.html" class="menu-but">Главная</a>
-		<a href="schedule.html" class="menu-but">Расписание</a>
-		<a href="pricelist.html" class="menu-but">Цены</a>
-		<a href="info_rules.html" class="menu-but">Информация</a>
-		<!--<a href="corp.html" class="menu-but">Корпоративным клиентам</a>!-->
-		<a href="gallery.html" class="menu-but">Галерея</a>
-		<div class="menu-share">
-			<!-- uSocial -->
-			<script async src="https://usocial.pro/usocial/usocial.js?v=6.1.4" data-script="usocial" charset="utf-8"></script>
-			<div class="uSocial-Share" data-pid="ecdea44ec4fe92e5042233e7cf7fe9e8" data-type="share" data-options="rect,style1,default,absolute,horizontal,size32,eachCounter0,counter0" data-social="vk,ok,twi,mail" data-mobile="vi,wa,sms"></div>
-			<!-- /uSocial -->
-		</div>
-	</div>
-	<div class="content block-top-shadow" style="min-height: 100%; padding:64px">
-		<p><strong>Расписание платных дополнительных </strong></p>
-<p><strong>физкультурно-оздоровительных услуг в бассейне &laquo;Дельфин&raquo;</strong></p>
-<p><strong>&nbsp;БОУ г. Омска &laquo;Средняя общеобразовательная школа №55</strong></p>
-<p><strong>&nbsp;имени </strong><strong>Л.Я. Кичигиной и В.И. Кичигина</strong><strong>&raquo;</strong></p>
-<br>
-<ol>
-<li><strong>Группы спортивно-оздоровительного плавания для детей (с 6 лет)</strong></li>
-</ol>
-<table>
-<tbody>
-<tr>
-<td rowspan="2" style="width:165px">
-<p><strong><em>День недели</em></strong></p>
-</td>
-<td colspan="2" style="width:294px">
-<p><strong><em>Малая чаша</em></strong></p>
-</td>
-<td colspan="2" style="width:308px">
-<p><strong><em>Большая чаша</em></strong></p>
-</td>
-</tr>
-<tr>
-<td style="width:131px">
-<p><strong><em>время</em></strong></p>
-</td>
-<td style="width:163px">
-<p><strong><em>тренер</em></strong></p>
-</td>
-<td style="width:136px">
-<p><strong><em>время</em></strong></p>
-</td>
-<td style="width:172px">
-<p><strong><em>тренер</em></strong></p>
-</td>
-</tr>
-<tr>
-<td style="width:165px">
-<p><strong>Вторник</strong></p>
-</td>
-<td style="width:131px">
-<p>15.50-16.50</p>
-<p>17.00-18.00</p>
-<p>18.00-19.00</p>
-<p>19.10-20.10</p>
-</td>
-<td style="width:163px">
-<p>Котомцева Д.В.</p>
-<p>Котомцева Д.В.</p>
-<p>Тесля А.В.</p>
-<p>Тесля А.В.</p>
-</td>
-<td style="width:136px">
-<p>15.40-16.40</p>
-<p>16.50-17.50</p>
-</td>
-<td style="width:172px">
-<p>Тесля А.В.</p>
-<p>Тесля А.В.</p>
-</td>
-</tr>
-<tr>
-<td style="width:165px">
-<p><strong>Среда</strong></p>
-</td>
-<td style="width:131px">
-<p>16.50-17.50</p>
-<p>18.00-19.00</p>
-<p>(с октября)</p>
-</td>
-<td style="width:163px">
-<p>Котомцева Д.В.</p>
-<p>Котомцева Д.В.</p>
-</td>
-<td style="width:136px">
-<p>15.30-16.30</p>
-</td>
-<td style="width:172px">
-<p>Котомцева Д.В.</p>
-</td>
-</tr>
-<tr>
-<td style="width:165px">
-<p><strong>Четверг</strong></p>
-</td>
-<td style="width:131px">
-<p>15.50-16.50</p>
-<p>17.00-18.00</p>
-<p>(с октября)</p>
-<p>18.10-19.10</p>
-<p>19.20-20.20</p>
-</td>
-<td style="width:163px">
-<p>Котомцева Д.В.</p>
-<p>Котомцева Д.В.</p>
-<p></p>
-<p>Тесля А.В.</p>
-<p>Тесля А.В.</p>
-</td>
-<td style="width:136px">
-<p>15.40-16.40</p>
-<p>16.50-17.50</p>
-</td>
-<td style="width:172px">
-<p>Тесля А.В.</p>
-<p>Тесля А.В.</p>
-</td>
-</tr>
-<tr>
-<td style="width:165px">
-<p><strong>Пятница</strong></p>
-</td>
-<td style="width:131px">
-<p>16.50-17.50</p>
-<p>18.00-19.00</p>
-<p>(с октября)</p>
-</td>
-<td style="width:163px">
-<p>Котомцева Д.В.</p>
-<p>Котомцева Д.В.</p>
-</td>
-<td style="width:136px">
-<p>15.40-16.40</p>
-</td>
-<td style="width:172px">
-<p>Котомцева Д.В.</p>
-</td>
-</tr>
-<tr>
-<td style="width:165px">
-<p><strong>Суббота/<br>Воскресенье</strong></p>
-</td>
-<td style="width:131px">
-<p>11.30-12.30</p>
-<p>12.40-13.40</p>
-<p>13.50-14.50</p>
-<p>15.00-16.00</p>
-<p>16.10-17.10</p>
-</td>
-<td style="width:163px">
-<p>Котомцева Д.В.</p>
-<p>Котомцева Д.В.</p>
-<p>Котомцева Д.В.</p>
-<p>Тесля А.В.</p>
-<p>Тесля А.В.</p>
-<p>Котомцева Д.В.</p>
-</td>
-<td style="width:136px">
-<p>11.40-12.40</p>
-<p>12.50-13.50</p>
-<p>15.00-16.00</p>
-<p>16.10-17.10</p>
-</td>
-<td style="width:172px">
-<p>Тесля А.В.</p>
-<p>Тесля А.В.</p>
-<p>Котомцева Д.В.</p>
-<p>Тесля А.В.</p>
-</td>
-</tr>
-</tbody>
-</table>
-<br>
-<ol start="2">
-<li><strong>Оздоровительное плавание &laquo;Мать и дитя&raquo; (совместное групповое занятие)</strong></li>
-</ol>
-<table>
-<tbody>
-<tr>
-<td style="width:256px">
-<p><strong><em>День недели</em></strong></p>
-</td>
-<td style="width:256px">
-<p><strong><em>Время</em></strong></p>
-</td>
-<td style="width:256px">
-<p><strong><em>тренер</em></strong></p>
-</td>
-</tr>
-<tr>
-<td style="width:256px">
-<p><strong>Четверг</strong></p>
-</td>
-<td style="width:256px">
-<p>18.00-19.00</p>
-</td>
-<td style="width:256px">
-<p>Машкова Г.А.</p>
-</td>
-</tr>
-<tr>
-<td style="width:256px">
-<p><strong>Суббота</strong></p>
-</td>
-<td style="width:256px">
-<p>18.30-19.30</p>
-</td>
-<td style="width:256px">
-<p>Машкова Г.А.</p>
-</td>
-</tr>
-<tr>
-<td style="width:256px">
-<p><strong>Воскресенье (с окт.)</strong></p>
-</td>
-<td style="width:256px">
-<p>18.30-19.30</p>
-</td>
-<td style="width:256px">
-<p>Машкова Г.А.</p>
-</td>
-</tr>
-</tbody>
-</table>
-<br>
-<ol start="3">
-<li><strong>Детская спортивно-оздоровительная секция &laquo;Водное поло&raquo;</strong></li>
-</ol>
-<strong>Тренеры: Мухин Евгений Маратович, Котомцева Джиллиана Вячеславовна</strong>
-<table width="860">
-<tbody>
-<tr>
-<td width="222">
-<p><strong>День недели</strong></p>
-</td>
-<td width="319">
-<p><strong>Время</strong></p>
-</td>
-<td width="319">
-<p><strong>Группа</strong></p>
-</td>
-</tr>
-<tr>
-<td width="222">
-<p><strong>Понедельник</strong></p>
-</td>
-<td width="319">
-<p>18.00 &ndash; 19.00</p>
-</td>
-<td width="319">
-<p><strong>прикладное плавание</strong></p>
-</td>
-</tr>
-<tr>
-<td rowspan="3" width="222">
-<p><strong>Вторник</strong></p>
-</td>
-<td width="319">
-<p>9.00 &ndash; 10.00</p>
-</td>
-<td width="319">
-<p><strong>прикладное плавание</strong></p>
-</td>
-</tr>
-<tr>
-<td width="319">
-<p>18.00 &ndash; 19.00</p>
-</td>
-<td width="319">
-<p><strong>прикладное плавание</strong></p>
-</td>
-</tr>
-<tr>
-<td width="319">
-<p>18.00 &ndash; 19.00</p>
-</td>
-<td width="319">
-<p><strong><em>дошкольная</em></strong></p>
-<p>ОФП (сп/з)</p>
-</td>
-</tr>
-<tr>
-<td rowspan="1" width="222">
-<p><strong>Среда</strong></p>
-</td>
-<td width="319">
-<p>16.30 &ndash; 17.30</p>
-</td>
-<td width="319">
-<p><strong>прикладное плавание</strong></p>
-</td>
-</tr>
-<!-- <tr>
-<td width="319">
-<p>19.15 &ndash; 20.15</p>
-</td>
-<td width="319">
-<p><strong><em>дошкольная </em></strong>(м/чаша)</p>
-</td>
-</tr> -->
-<tr>
-<td rowspan="2" width="222">
-<p><strong>Четверг</strong></p>
-</td>
-<td width="319">
-<p>9.00 &ndash; 10.00</p>
-</td>
-<td width="319">
-<p><strong>прикладное плавание</strong></p>
-</td>
-</tr>
-<tr>
-<td width="319">
-<p>20.00 &ndash; 21.00</p>
-</td>
-<td width="319">
-<p><strong>прикладное плавание</strong></p>
-</td>
-</tr>
-<tr>
-<td rowspan="1" width="222">
-<p><strong>Пятница</strong></p>
-</td>
-<td width="319">
-<p>9.00 &ndash; 10.00</p>
-</td>
-<td width="319">
-<p><strong>прикладное плавание</strong></p>
-</td>
-</tr>
-<!-- <tr>
-<td width="319">
-<p>19.15 &ndash; 20.15</p>
-</td>
-<td width="319">
-<p><strong><em>дошкольная </em></strong>(м/чаша)</p>
-</td>
-</tr>
-<tr>
-<td width="319">
-<p>20.00 &ndash; 21.00</p>
-</td>
-<td width="319">
-<p><strong>прикладное плавание</strong></p>
-</td>
-</tr> -->
-<tr>
-<td rowspan="2" width="222">
-<p><strong>Суббота</strong></p>
-</td>
-<td width="319">
-<p>16.20 &ndash; 17.20 (спорт.зал)</p>
-<p>17.20 &ndash; 18.20 (вода)</p>
-</td>
-<td width="319">
-<p><strong>комплексная тренировка</strong></p>
-</td>
-</tr>
-<tr>
-<td width="319">
-<p>18.30 &ndash; 19.30 (спорт.зал)</p>
-<p>19.40 &ndash; 20.40 (вода)</p>
-</td>
-<td width="319">
-<p><strong>комплексная тренировка</strong></p>
-</td>
-</tr>
-<tr>
-<td rowspan="2" width="222">
-<p><strong>Воскресенье</strong></p>
-</td>
-<td width="319">
-<p>8.30 &ndash; 9.30 (спорт.зал)</p>
-<p>9.30 &ndash; 10.30 (вода)</p>
-</td>
-<td width="319">
-<p><strong>комплексная тренировка</strong><br>(младшая группа)</p>
-</td>
-</tr>
-<tr>
-<td width="319">
-<p>10.30 &ndash; 11.30 (вода)</p>
-<p>11.30 &ndash; 12.30 (спорт.зал)</p>
-</td>
-<td width="319">
-<p><strong>комплексная тренировка</strong><br>(старшая группа)</p>
-</td>
-</tr>
-</tbody>
-</table>
-<br>
-<ol start="4">
-<li><strong>Группы &laquo;Аква-аэробики&raquo; (фитнес-программы для взрослых старше 18 лет) </strong></li>
-</ol>
-<table>
-<tbody>
-<tr>
-<td style="width:256px">
-<p><strong><em>День недели</em></strong></p>
-</td>
-<td style="width:256px">
-<p><strong><em>Время</em></strong></p>
-</td>
-<td style="width:256px">
-<p><strong><em>Инструктор</em></strong></p>
-</td>
-</tr>
-<tr>
-<td style="width:256px">
-<p><strong>Вторник</strong></p>
-</td>
-<td style="width:256px">
-<p>19.10-20.40</p>
-</td>
-<td style="width:256px">
-<p>Криницкая Т.А.</p>
-</td>
-</tr>
-<tr>
-<td style="width:256px">
-<p><strong>Среда (с окт.)</strong></p>
-</td>
-<td style="width:256px">
-<p>19.00-20.30</p>
-</td>
-<td style="width:256px">
-<p>Криницкая Т.А.</p>
-</td>
-</tr>
-<tr>
-<td style="width:256px">
-<p><strong>Пятница</strong></p>
-</td>
-<td style="width:256px">
-<p>18.30-20.00</p>
-</td>
-<td style="width:256px">
-<p>Криницкая Т.А.</p>
-</td>
-</tr>
-<tr>
-<td style="width:256px">
-<p><strong>Суббота</strong></p>
-</td>
-<td style="width:256px">
-<p>10.00-11.30</p>
-</td>
-<td style="width:256px">
-<p>Криницкая Т.А.</p>
-</td>
-</tr>
-</tbody>
-</table>
-<br>
-<ol start="5">
-<li><strong>Семейное (свободное) плавание</strong></li>
-</ol>
-<table>
-<tbody>
-<tr>
-<td style="width:256px">
-<p><strong><em>День недели</em></strong></p>
-</td>
-<td style="width:256px">
-<p><strong><em>Время</em></strong></p>
-</td>
-</tr>
-<tr>
-<td style="width:256px">
-<p><strong>Вторник</strong></p>
-</td>
-<td style="width:256px">
-<p>12.00-13.00</p>
-<p>20.30-21.30</p>
-</td>
-</tr>
-<tr>
-<td style="width:256px">
-<p><strong>Четверг</strong></p>
-</td>
-<td style="width:256px">
-<p>18.00-19.00</p>
-</td>
-</tr>
-<tr>
-<td style="width:256px">
-<p><strong>Суббота</strong></p>
-</td>
-<td style="width:256px">
-<p>18.00-19.00</p>
-</td>
-</tr>
-<tr>
-<td style="width:256px">
-<p><strong>Воскресенье</strong></p>
-</td>
-<td style="width:256px">
-<p>18.00-19.00</p>
-</td>
-</tr>
-</tbody>
-</table>
-	</div>
-	<div class="footer block-top-shadow">
-		Copyright &copy; 2018 Г. ПБ "Дельфин"<br>
-		Сайт находится в стадии разработки. Приносим извинения за некоторые неудобства.
-	</div>
-</body>
+			<div class="contacts">
+				<!--flexbox!-->
+				<span>Наши контакты</span>
+				<br>
+				<span>Адрес: г. Омск, Кировский округ, ул. Мельничная, 4.</span>
+				<br>
+				<span>Телефон: <a href="tel:55-06-70">+7 (3812) 55-06-70</a><br>
+				Почта: <a href="mailto:aquafitness@bk.ru">aquafitness@bk.ru</a><span>
+			</div>
+			<div class="map">
+				<a href="https://go.2gis.com/vvr7n">
+					<div></div>
+				</a>
+			</div>
+		</header>
+		<nav class="header-nav">
+			<!--flexbox!-->
+			<a href="index.html">Главная</a>
+			<a href="schedule.html">Расписание</a>
+			<a href="pricelist.html">Цены</a>
+			<a href="info_rules.html">Информация</a>
+			<a href="gallery.html">Галерея</a>
+			<div class="share">
+				<!-- uSocial -->
+				<script async src="https://usocial.pro/usocial/usocial.js?v=6.1.4" data-script="usocial" charset="utf-8"></script>
+				<div class="uSocial-Share" data-pid="ecdea44ec4fe92e5042233e7cf7fe9e8" data-type="share" data-options="rect,style1,default,absolute,horizontal,size32,eachCounter0,counter0" data-social="vk,ok,twi,spoiler"></div>
+				<!-- /uSocial -->
+			</div>
+		</nav>
+		<main>
+			<section class="paper-field">
+				<article class="main_info">
+					<nav class="paper-nav" id="group_names_list">
+					</nav>
+					<aside id="group_data_list">
+						<h2 class="info-title">Выберите группу</h2>
+					</aside>
+				</article>
+			</section>
+		</main>
+		<footer>
+			<p>Copyright &copy; 2023 Г. ПБ "Дельфин"</p>
+		</footer>
+	</body>
 </html>

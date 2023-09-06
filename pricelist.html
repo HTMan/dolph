@@ -1,393 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114077693-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-114077693-1');
-</script>
-<meta charset="UTF-8">
-<title>Цены</title>
-<style>
-   TD, TH { 
-    text-align: center; 
-    padding: 3px; 
-    border: 1px solid gray;
-   }
-  </style>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<div class="header">
-		<div class="header-title">
-			<p class="header-title-text">Плавательный бассейн Дельфин</p>
-		</div>
-		<div class="header-contacts">
-				<div class="header-contacts-block">
-					<p class="font-header-title" style="padding-left: 20px">Наши контакты</p>
-					<p class="text" style="padding-top: 20px; padding-left: 20px">
-						Адрес: г. Омск, Кировский округ,<br>
-						ул. Мельничная, 4.<br>
-					</p>
-					<p class="text  header-contacts-block-text" style="padding-top: 20px;  padding-left: 20px">
-						Телефон: <a href="tel:55-06-70" style="text-decoration: none; color: #dadaff">+7 (3812) 55-06-70</a>
-						<br>
-						Почта: <a href="mailto:aquafitness@bk.ru" style="text-decoration: none; color: #dadaff">aquafitness@bk.ru</a>
-					</p>
-				</div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2292.252985155408!2d73.32307758051876!3d54.93357968623823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43ab03b2cb37d0cb%3A0x899bb25319c3b143!2z0YPQuy4g0JzQtdC70YzQvdC40YfQvdCw0Y8sIDQsINCe0LzRgdC6LCDQntC80YHQutCw0Y8g0L7QsdC7LiwgNjQ0MDgy!5e0!3m2!1sru!2sru!4v1517129719564" 
-				width="210" height="191" allowfullscreen style="border: 0" class="header-contacts-map"></iframe>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="table.css">
+		<script type="module" src="base.js"></script>
+		<script type="module" src="pricelist.js"></script>
+		<title>Бассейн "Дельфин"</title>
+	</head>
+	<body>
+		<header>
+			<!--flexbox!-->
+			<div class="logo">
+				<h1>Плавательный<br>бассейн Дельфин</h1>
 			</div>
-		</div>
-	<div class="menu">
-		<a href="index.html" class="menu-but">Главная</a>
-		<a href="schedule.html" class="menu-but">Расписание</a>
-		<a href="pricelist.html" class="menu-but">Цены</a>
-		<a href="info_rules.html" class="menu-but">Информация</a>
-		<!--<a href="corp.html" class="menu-but">Корпоративным клиентам</a>!-->
-		<a href="gallery.html" class="menu-but">Галерея</a>
-		<div class="menu-share">
-			<!-- uSocial -->
-			<script async src="https://usocial.pro/usocial/usocial.js?v=6.1.4" data-script="usocial" charset="utf-8"></script>
-			<div class="uSocial-Share" data-pid="ecdea44ec4fe92e5042233e7cf7fe9e8" data-type="share" data-options="rect,style1,default,absolute,horizontal,size32,eachCounter0,counter0" data-social="vk,ok,twi,mail" data-mobile="vi,wa,sms"></div>
-			<!-- /uSocial -->
-		</div>
-	</div>
-	<div class="content block-top-shadow" style="min-height: 100%; padding:64px">
-		<p class="font-content-title">К оплате принимаются банковские карты</p>
-		<table style="border: solid 2px width;">
-			<tbody>
-				<tr>
-					<td colspan="6">
-						<p><strong>ПРЕЙСКУРАНТ ЦЕН</strong></p>
-						<p><strong>на платные дополнительные физкультурно-оздоровительные услуги бассейна школы "ДЕЛЬФИН"</strong></p>
-					</td>
-				</tr>
-				<tr style="background-color: #b8c1df">
-					<td rowspan="2">
-						<p><strong>Вид услуги</strong></p>
-					</td>
-					<td rowspan="2">
-						<p><strong>Продолжительность</strong></p>
-						<p><strong>одного посещения</strong></p>
-					</td>
-					<td colspan="2">
-						<p><strong>ДЕТИ</strong></p>
-					</td>
-					<td colspan="2">
-						<p><strong>ВЗРОСЛЫЕ</strong></p>
-					</td>
-				</tr>
-				<tr style="background-color:#b8d2df" >
-					<td>
-						<p><strong>Кол-во занятий</strong></p>
-					</td>
-					<td>
-						<p><strong>Стоимость (руб)</strong></p>
-					</td>
-					<td>
-						<p><strong>Кол-во занятий</strong></p>
-					</td>
-					<td>
-						<p><strong>Стоимость (руб)</strong></p>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="6">
-						<p><strong>услуги без НДС</strong></p>
-					</td>
-				</tr>
-				<tr>
-					<td style="background-color:#f6fafd">
-						<p>Спортивно-оздоровительное плавание для детей от 5 лет</p>
-					</td>
-					<td>
-						<p>1 академ. час</p>
-					</td>
-					<td>
-						<p>8</p>
-					</td>
-					<td>
-						<p>1160</p>
-					</td>
-					<td colspan="2">
-						<p>-</p>
-					</td>
-				</tr>
-				<tr>
-					<td rowspan="3" style="background-color:#f6fafd">
-						<p>Семейное плавание (оздоровительное плавание для взрослых и детей)</p>
-					</td>
-					<td rowspan="3">
-						<p>1 час</p>
-					</td>
-					<td> 
-						<p>1</p>
-					</td>
-					<td>
-						<p>150</p>
-					</td>
-					<td>
-						<p>1</p>
-					</td>
-					<td>
-						<p>280</p>
-					</td>
-				</tr>
-				<tr>
-					<td  rowspan="2">
-						<p>4</p>
-					</td>
-					<td  rowspan="2">
-						<p>500</p>
-					</td>
-					<td >
-						<p>4</p>
-					</td>
-					<td>
-						<p>900</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<p>4 до 17:00</p>
-					</td>
-					<td>
-						<p>800</p>
-					</td>
-				</tr>
-				<tr>
-					<td rowspan="2" style="background-color:#f6fafd">
-						<p>Оздоровительное плавание "Мать и дитя" (совместное групповое занятие)</p>
-					</td>
-					<td rowspan="2">
-						<p>1,5 часа</p>
-					</td>
-					<td colspan="2">
-						<p>1 взрослый + 1 ребенок</p>
-					</td>
-					<td>
-						<p>1</p>
-					</td>
-					<td>
-						<p>250</p>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2">
-						<p>1 взрослый + 2 ребенка</p>
-					</td>
-					<td>
-						<p>1</p>
-					</td>
-					<td>
-						<p>350</p>
-					</td>
-				</tr>
-				<tr>
-					<td rowspan="3" style="background-color:#f6fafd">
-						<p>Аквааэробика (групповые фитнес-программы)</p>
-					</td>
-					<td rowspan="3">
-						<p>1,5 часа</p>
-					</td>
-					<td colspan="2" rowspan="3">
-						<p>-</p>
-					</td>
-					<td>
-						<p>1</p>
-					</td>
-					<td>
-						<p>350</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<p>4</p>
-					</td>
-					<td>
-						<p>1 200</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<p>8</p>
-					</td>
-					<td>
-						<p>2 000</p>
-					</td>
-				</tr>
-				<tr>
-					<td rowspan="2" style="background-color:#f6fafd">
-						<p>Спортивно-оздоровительная секция для детей школьного возраста по водному поло</p>
-					</td>
-					<td>
-						<p>1 академ. час</p>
-					</td>
-					<td rowspan="2">
-						<p>8</p>
-					</td>
-					<td rowspan="2">
-						<p>2 880</p>
-					</td>
-					<td rowspan="2" colspan="2">
-						<p>-</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<p>2 академ. часа</p>
-					</td>
-				</tr>
-				<tr>
-					<td  style="background-color:#f6fafd">
-						<p>Спортивно-оздоровительная секция для детей дошкольного возраста по водному поло (6-7 лет)</p>
-					</td>
-					<td>
-						<p>1 академ. час<br>(прикладное плавание/ ОФП зал)</p>
-					</td>
-					<td >
-						<p>12</p>
-					</td>
-					<td>
-						<p>2 040</p>
-					</td>
-					<td colspan="2">
-						<p>-</p>
-					</td>
-				</tr>
-				<tr>
-					<td rowspan="2" style="background-color:#f6fafd">
-						<p>коллективное посещение группы (от организации, предприятия) оздоровительного плавания</p>
-					</td>
-					<td rowspan="2">
-						<p>1 час</p>
-					</td>
-					<td rowspan="2" colspan="2">
-						<p>-</p>
-					</td>
-					<td>
-						<p>1</p>
-					</td>
-					<td>
-						<p>5 000</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<p>4</p>
-					</td>
-					<td>
-						<p>20 000</p>
-					</td>
-				</tr>
-				<tr>
-					<td rowspan="2" style="background-color:#f6fafd">
-						<p>коллективное посещение группы (от организации, предприятия) оздоровительного плавания и аквааэробики</p>
-					</td>
-					<td rowspan="2">
-						<p>1,5 часа</p>
-					</td>
-					<td rowspan="2" colspan="2">
-						<p>-</p>
-					</td>
-					<td>
-						<p>1</p>
-					</td>
-					<td>
-						<p>6 500</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<p>4</p>
-					</td>
-					<td>
-						<p>26 000</p>
-					</td>
-				</tr>
-				<tr>
-					<td style="background-color:#f6fafd">
-						<p>Коллективное посещение оздоровительных тренировок в спортивном зале по игровым видам спорта (волейбол, баскетбол, мини-футбол),
-						для организаций, предприятий.
-						</p>
-					</td>
-					<td>
-						<p>1 час</p>
-					</td>
-					<td>
-						<p>-</p>
-					</td>
-					<td>
-						<p>-</p>
-					</td>
-					<td>
-						<p>1</p>
-					</td>
-					<td>
-						<p>1 000,0</p>
-					</td>
-				</tr>
-				<tr>
-					<td style="background-color:#f6fafd">
-						<p>групповые тренировочные занятия в тренажерном зале с посещением бассейна для детей (с 14 лет) и взрослых</p>
-					</td>
-					<td>
-						<p>1 час</p>
-					</td>
-					<td>
-						<p>12</p>
-					</td>
-					<td>
-						<p>1000</p>
-					</td>
-					<td>
-						<p>12</p>
-					</td>
-					<td>
-						<p>1000,00</p>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="6">
-						<p><strong>с НДС</strong></p>
-					</td>
-				</tr>
-				<tr>
-					<td rowspan="2" style="background-color:#f6fafd">
-						<p>Изготовление и реализация кислородного коктейля</p>
-					</td>
-					<td>
-						<p>0,200 мл</p>
-					</td>
-					<td colspan="2">
-						<p>1</p>
-					</td>
-					<td colspan="2">
-						<p>15,00</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<p>0,500 мл</p>
-					</td>
-					<td colspan="2">
-						<p>1</p>
-					</td>
-					<td colspan="2">
-						<p>20,00</p>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	<div class="footer block-top-shadow">
-		Copyright &copy; 2018 Г. ПБ "Дельфин"<br>
-		Сайт находится в стадии разработки. Приносим извинения за некоторые неудобства.
-	</div>
-</body>
+			<div class="contacts">
+				<!--flexbox!-->
+				<span>Наши контакты</span>
+				<br>
+				<span>Адрес: г. Омск, Кировский округ, ул. Мельничная, 4.</span>
+				<br>
+				<span>Телефон: <a href="tel:55-06-70">+7 (3812) 55-06-70</a><br>
+				Почта: <a href="mailto:aquafitness@bk.ru">aquafitness@bk.ru</a><span>
+			</div>
+			<div class="map">
+				<a href="https://go.2gis.com/vvr7n">
+					<div></div>
+				</a>
+			</div>
+		</header>
+		<nav class="header-nav">
+			<!--flexbox!-->
+			<a href="index.html">Главная</a>
+			<a href="schedule.html">Расписание</a>
+			<a href="pricelist.html">Цены</a>
+			<a href="info_rules.html">Информация</a>
+			<a href="gallery.html">Галерея</a>
+			<div class="share">
+				<!-- uSocial -->
+				<script async src="https://usocial.pro/usocial/usocial.js?v=6.1.4" data-script="usocial" charset="utf-8"></script>
+				<div class="uSocial-Share" data-pid="ecdea44ec4fe92e5042233e7cf7fe9e8" data-type="share" data-options="rect,style1,default,absolute,horizontal,size32,eachCounter0,counter0" data-social="vk,ok,twi,spoiler"></div>
+				<!-- /uSocial -->
+			</div>
+		</nav>
+		<main>
+			<section class="paper-field">
+				<article class="main_info">
+					<nav class="paper-nav" id="group_names_list">
+					</nav>
+					<aside id="group_data_list">
+						<h2 class="info-title">Выберите группу</h2>
+
+					</aside>
+				</article>
+			</section>
+		</main>
+		<footer>
+			<p>Copyright &copy; 2023 Г. ПБ "Дельфин"</p>
+		</footer>
+	</body>
 </html>
