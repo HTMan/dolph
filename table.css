@@ -30,3 +30,7 @@
 #group_names_list a {
     cursor: pointer;
 }
+
+#group_data_list {
+  overflow-x: auto;
+}
