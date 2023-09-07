@@ -1,4 +1,4 @@
-import {load_doc, load_JSON_promise, fill_button_list} from './base.mjs';
+import {load_doc, load_JSON_promise, fill_button_list} from './base.js';
 
 Promise.all([
     load_JSON_promise("json_data/groups.json"),
