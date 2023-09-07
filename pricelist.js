@@ -1,7 +1,4 @@
-import {load_doc, load_JSON_promise, fill_button_list} from './base.js';
-
-var groups_json;
-var trainers_json;
+import {load_doc, load_JSON_promise, fill_button_list} from './base.mjs';
 
 Promise.all([
     load_JSON_promise("json_data/pricelist.json"),
