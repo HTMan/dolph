@@ -7,3 +7,5 @@ Promise.all([
     let pricelist_json = values[0].groups;
     fill_button_list(pricelist_json, "group_names_list", "group_data_list", "common_table", "common_table_even", "common_table_subgroup", []);
 });
+
+console.log("pricelist Ok");

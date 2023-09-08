@@ -10,6 +10,8 @@ Promise.all([
     fill_button_list(groups_json, "group_names_list", "group_data_list", "common_table", "common_table_even", "common_table_subgroup", [trainers_json]);
 });
 
+console.log("schedule Ok");
+
 // var json_test = {
 //     "_groups": [
 //         {
