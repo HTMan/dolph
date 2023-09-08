@@ -1,4 +1,4 @@
-export var load_doc = new Promise((resolve, reject) => {
+export let load_doc = new Promise((resolve, reject) => {
     window.addEventListener('load', function() {
         resolve(true);
     });
