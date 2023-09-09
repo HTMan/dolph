@@ -1,12 +1,12 @@
-import {load_doc, load_JSON_promise, fill_button_list} from './base.js';
+//import {load_doc, load_JSON_promise, fill_button_list} from './base.js';
 
 Promise.all([
     load_JSON_promise("json_data/groups.json"),
     load_JSON_promise("json_data/trainers.json"),
-    load_doc
+    //load_doc
 ]).then((values) => {
-    var groups_json = values[0].groups;
-    var trainers_json = values[1];
+    let groups_json = values[0].groups;
+    let trainers_json = values[1];
     fill_button_list(groups_json, "group_names_list", "group_data_list", "common_table", "common_table_even", "common_table_subgroup", [trainers_json]);
 });
 

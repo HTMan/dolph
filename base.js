@@ -1,16 +1,17 @@
-export let load_doc = new Promise((resolve, reject) => {
-    window.addEventListener('load', function() {
-        resolve(true);
-    });
-});
+// let load_doc = new Promise((resolve, reject) => {
+//     window.addEventListener('load', function() {
+//         resolve(true);
+//         console.log("Ok");
+//     });
+// });
 
-export function load_JSON_promise(url) {
+function load_JSON_promise(url) {
     return fetch(url)
     .then(res => res.json())
     .catch(err => console.error(err));
 }
 
-export function fill_button_list(groups_json, group_names_list_id, group_data_list_id, table_id, table_even_id, table_subgroup_id, connections)
+function fill_button_list(groups_json, group_names_list_id, group_data_list_id, table_id, table_even_id, table_subgroup_id, connections)
 {
     let group_names_list = document.getElementById(group_names_list_id);
     for (let i = 0; i < groups_json.length; i++) {

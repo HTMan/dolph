@@ -6,19 +6,24 @@
 		<link rel="stylesheet" href="styles.css">
 		<link rel="stylesheet" href="table.css">
 		<script>
-			const script_base = document.createElement("script");
-			script_base.type = "module";
-			script_base.src = './base.js';
-			script_base.onload = function() {
-				script_schedule = document.createElement("script");
-				script_schedule.type = "module";
-				script_schedule.src = "./schedule.js";
-				document.head.appendChild(script_schedule);
-			}
-			document.head.appendChild(script_base);
+			let common_script = "";
+			fetch('base.js')
+			.then(response => response.text())
+			.then(str => {
+				common_script += str;
+				fetch('schedule.js')
+				.then(response => response.text())
+				.then(str => {
+					common_script += "\n" + str;
+					let script_schedule = document.createElement("script");
+					script_schedule.textContent = common_script;
+					document.body.appendChild(script_schedule);
+				});
+			});
 		</script>
 		<title>Бассейн "Дельфин"</title>
 	</head>
+
 	<body>
 		<header>
 			<!--flexbox!-->
