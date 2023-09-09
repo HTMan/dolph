@@ -240,5 +240,3 @@ function json_to_table(json_group_data, style_id, even_id, subgroup_id, connecti
 
     return table;
 }
-
-console.log("base Ok");
