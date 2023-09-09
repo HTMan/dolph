@@ -7,11 +7,11 @@
 		<link rel="stylesheet" href="table.css">
 		<script>
 			let common_script = "";
-			fetch('base.js')
+			fetch('base.txt')
 			.then(response => response.text())
 			.then(str => {
 				common_script += str;
-				fetch('schedule.js')
+				fetch('schedule.txt')
 				.then(response => response.text())
 				.then(str => {
 					common_script += "\n" + str;
