@@ -190,6 +190,21 @@ nav.paper-nav *:active {
 	margin: 0 auto;
 }
 
+.img_line {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.img_line img {
+	width: 300px;
+	height: 250px;
+	padding-bottom: 1em;
+}
+
+.img_line aside {
+	flex-basis: 100%;
+}
+
 /*main_info*/
 .main_info {
 	display: flex;
