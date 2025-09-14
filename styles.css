@@ -24,7 +24,7 @@ header {
 	flex: 3 50%;
 	background-color: #e1e2e3;
 	text-align: center;
-	background-image: url(img/water_texture.png);
+	background-image: url(img/common/water_texture.png);
 	color: #2172c3;
 	display: flex;
 	flex-direction: row;
@@ -66,7 +66,7 @@ header {
 	width: 100%;
 	height: 100%;
 	min-height: 130px;
-	background-image: url(img/view_map.png);
+	background-image: url(img/common/view_map.png);
 	background-position: center;
 	background-size: 800px;
 	transition: background-size 0.5s;
@@ -148,7 +148,7 @@ h2.info-title {
 	flex: 1 60%;
 }
 
-.paper-field img {
+.paper-field-base_img {
 	width: 500px;
 	height: 400px;
 	margin: 0 auto;
@@ -307,4 +307,12 @@ footer {
 	
 	/*additional*/
 	.additional img:last-child {display: none;}
+}
+
+.img_show {
+  width: auto;
+  height: auto;
+  max-width: 75%;
+  max-height: 75%;
+  display: block;
 }

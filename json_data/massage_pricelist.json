@@ -1,0 +1,20 @@
+{
+    "images": [
+        {
+            "title": "Массаж для детей",
+            "src": "img/massage/deti.png"
+        },
+        {
+            "title": "Массаж + ЛФК для детей",
+            "src": "img/massage/complex_lfk_deti.png"
+        },
+        {
+            "title": "Массаж для подростков",
+            "src": "img/massage/podrostki.png"
+        },
+        {
+            "title": "Массаж для взрослых",
+            "src": "img/massage/vzrosluje.png"
+        }
+    ]
+}

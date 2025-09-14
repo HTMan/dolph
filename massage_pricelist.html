@@ -1,51 +1,51 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="styles.css">
-		<link rel="stylesheet" href="imgs_viewer.css" type="text/css"/>
 		<script>
-			function viewImg(e) {
-				var el = e.target;
-				if (el.tagName == "IMG") {
-				var popup = document.createElement("div");
-				popup.className = "imgs_popup";
-				popup.innerHTML = "<div></div><img src=\"" + el.src.split("t_").join('')+"\"/>";
-				document.body.appendChild(popup);
-				popup.style.opacity = "1.0";
-				popup.firstChild.onclick = function() {
-						popup.addEventListener("transitionend", function() { document.body.removeChild(popup); }, false);
-						popup.style.opacity = '0';
-					}
-				}
-			}
 
-			function getList() {
-				const num_files = 17;
-				var container = document.getElementById("imgs_viewer"), item;
-				for (let i = 0; i <= num_files; i++) {
-					item = document.createElement("img");
-					item.src = "img/gallery/t_" + i + ".jpg";
-					container.appendChild(item);
-				}
+			function show_image(image) {
+				console.log("Ok");
+				let field = document.getElementById("massage_pricelist_field");
+				field.innerHTML = `<h2 class="info-title">${image.title}</h2><img class="img_show" src="${image.src}" alt="${image.title}">`;
 			}
+			
+			let promise_json = fetch('json_data/massage_pricelist.json')
+			.then(response => response.json())
+			.catch(error => console.log(error));
 
-			window.onload = function () {
-				getList();
-				document.getElementById('imgs_viewer').onclick = viewImg;
-			}
+			let promise_page_load = new Promise(resolve => {
+				window.onload = resolve;
+			});
+
+			Promise.all([promise_json, promise_page_load]).then(([json_data]) => {
+
+				let menu = document.getElementById("massage_pricelist_menu");
+				menu.innerHTML = "";
+
+				for (let i = 0; i < json_data.images.length; i++) {
+
+					let title = json_data.images[i].title;
+					let button = document.createElement("a");
+					button.href = "javascript:void(0)";
+					button.textContent = title;
+					button.onclick = function() { show_image(json_data.images[i]); };
+					menu.appendChild(button);
+				}
+
+			});
+
 		</script>
 		<title>Бассейн "Дельфин"</title>
 	</head>
 	<body>
 		<header>
-			<!--flexbox!-->
 			<div class="logo">
 				<h1>Плавательный<br>бассейн Дельфин</h1>
 			</div>
 			<div class="contacts">
-				<!--flexbox!-->
 				<span>Наши контакты</span>
 				<br>
 				<span>Адрес: г. Омск, Кировский округ, ул. Мельничная, 4.</span>
@@ -54,13 +54,12 @@
 				Почта: <a href="mailto:aquafitness@bk.ru">aquafitness@bk.ru</a><span>
 			</div>
 			<div class="map">
-				<a href="https://2gis.ru/omsk/firm/282003257688243%2C73.324095%2C54.93391?queryState=center%2F73.32549%2C54.93351%2Fzoom%2F17">
+				<a href="https://go.2gis.com/vvr7n">
 					<div></div>
 				</a>
 			</div>
 		</header>
 		<nav class="header-nav">
-			<!--flexbox!-->
 			<a href="index.html">Главная</a>
 			<a href="schedule.html">Расписание</a>
 			<a href="pricelist.html">Цены</a>
@@ -75,7 +74,15 @@
 			</div>
 		</nav>
 		<main>
-			<section id="imgs_viewer"></section>
+			<section class="paper-field">
+				<article class="main_info">
+					<nav class="paper-nav" id="massage_pricelist_menu">
+					</nav>
+					<aside id="massage_pricelist_field">
+						<h2 class="info-title">Выберите услугу</h2>
+					</aside>
+				</article>
+			</section>
 		</main>
 		<footer>
 			<p>Copyright &copy; 2025 Г. ПБ "Дельфин"</p>
