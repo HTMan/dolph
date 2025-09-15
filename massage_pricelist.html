@@ -9,7 +9,7 @@
 			function show_image(image) {
 				console.log("Ok");
 				let field = document.getElementById("massage_pricelist_field");
-				field.innerHTML = `<h2 class="info-title">${image.title}</h2><img class="img_show" src="${image.src}" alt="${image.title}">`;
+				field.innerHTML = `<h2 class="info-title img_show-h2">${image.title}</h2><img class="img_show-image" src="${image.src}" alt="${image.title}">`;
 			}
 			
 			let promise_json = fetch('json_data/massage_pricelist.json')
@@ -74,12 +74,13 @@
 			</div>
 		</nav>
 		<main>
-			<section class="paper-field">
-				<article class="main_info">
-					<nav class="paper-nav" id="massage_pricelist_menu">
+			<section class="img_show-field">
+				<article class="img_show-article">
+					<nav class="paper-nav img_show-nav" id="massage_pricelist_menu">
 					</nav>
-					<aside id="massage_pricelist_field">
-						<h2 class="info-title">Выберите услугу</h2>
+					<aside class="img_show-aside">
+						<div id="massage_pricelist_field" class="img_show-div">
+						</div>
 					</aside>
 				</article>
 			</section>
