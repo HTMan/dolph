@@ -1,6 +1,10 @@
 {
     "images": [
         {
+            "title": "Информация",
+            "src": "img/massage/info.png"
+        },
+        {
             "title": "Массаж для детей",
             "src": "img/massage/deti.png"
         },
